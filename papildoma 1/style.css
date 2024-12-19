@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    background: pink;
+    font-family: oswald;
+    font-size: 20px;
+    padding: 30px;
+    border: 30px solid green;
+    min-height: 100vh;
+}
+.container {
+    background: blueviolet;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.container .ball {
+    width: 130px;
+    height: 130px;
+    background: rgb(190, 12, 101);
+    border-radius: 130px;
+    transition: 0.1s;
+}
+/* @keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation */
+.transition:hover .ball {
+    transform: translate(300px);
+}
+
+.animation .ball {
+    /* animation-name: bouncing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear; */
+    animation: bouncing 1s infinite alternate linear;
+}
